@@ -1,0 +1,14 @@
+{
+    "name": "pixiv downloader",
+    "manifest_version": 2,
+    "version": "1.0",
+    "browser_action": {
+        "default_icon": "icon_32.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://www.pixiv.net/"],
+            "js": ["content_scripts.js"]
+        }
+    ]
+}
